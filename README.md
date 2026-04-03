@@ -1,4 +1,4 @@
-# Minecraft Clicker Game
+# Minecraft Clicker
 
 A fun, open-source clicker game inspired by Minecraft mechanics.  
 Built with **TypeScript** and powered by **Vite.js** for fast development and cross-platform support.
@@ -19,7 +19,7 @@ Built with **TypeScript** and powered by **Vite.js** for fast development and cr
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/your-username/minecraft-clicker-game.git
+git clone https://github.com/Itz-Aaron-Playz-666/Minecraft-Clicker.git
 cd minecraft-clicker-game
 pnpm install
 ```
