@@ -12,7 +12,6 @@ jobs:
           echo "Installing PNPM"
           npm i -D -g pnpm
           echo "PNPM Successfully Installed"
-          exit 1
       - name: "Install Packages"
         run: |
           echo "Installing Packages..."
