@@ -1,0 +1,23 @@
+name: "Run Bash"
+on:
+  workflow_dispatch: 
+jobs:
+  install_dependencies:
+    name: "Install Dependencies"
+    runs-on: windows-latest
+    steps:
+      - name: "Install pnpm"
+        run: |
+          echo "Running From Workflows..."
+          echo "Installing PNPM"
+          npm i -D -g pnpm
+          echo "PNPM Successfully Installed"
+          exit 1
+      - name: "Install Packages"
+        run: |
+          echo "Installing Packages..."
+          pnpm add -D next node react @types/react react-dom @types/react-dom react-native three @types/three expo tailwindcss @tailwindcss/cli
+          pnpm dlx create-expo-app@latest MinecraftClicker
+          pnpm dlx expo start
+          pnpm run reset-project
+          cd MinecraftClicker
