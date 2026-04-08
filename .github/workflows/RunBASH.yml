@@ -10,7 +10,7 @@ jobs:
           version: 8
       - uses: actions/checkout@v3
       - name: Install pnpm
-        run: npm install -g pnp
+        run: npm install -g pnpm
       - name: Create Expo App
         run: pnpm dlx create-expo-app@latest MinecraftClicker
       - name: Install Packages
